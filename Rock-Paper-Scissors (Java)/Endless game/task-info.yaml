@@ -6,6 +6,24 @@ files:
   - name: test/Tests.java
     visible: false
     learner_created: false
+  - name: src/rockpaperscissors/Game.java
+    visible: true
+    learner_created: true
+  - name: src/rockpaperscissors/Move.java
+    visible: true
+    learner_created: true
+  - name: src/rockpaperscissors/Player.java
+    visible: true
+    learner_created: true
+  - name: src/rockpaperscissors/ComputerPlayer.java
+    visible: true
+    learner_created: true
+  - name: src/rockpaperscissors/HumanPlayer.java
+    visible: true
+    learner_created: true
 feedback_link: https://hyperskill.org/projects/314/stages/1766/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 07 Jun 2025 22:40:25 UTC"
 record: -1

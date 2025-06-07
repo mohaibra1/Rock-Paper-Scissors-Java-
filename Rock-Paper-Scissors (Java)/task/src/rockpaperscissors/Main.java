@@ -7,6 +7,10 @@ public class Main {
         Player computer = new ComputerPlayer("computer");
 
         Game game = new Game(human, computer);
-        game.playRound();
+        while (true) {
+            if (!game.playRound()){
+                break;
+            }
+        }
     }
 }
