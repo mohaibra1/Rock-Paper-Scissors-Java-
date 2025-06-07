@@ -17,19 +17,12 @@ public class Game {
         //System.out.println(player1.getName() + " played " + move1);
         //System.out.println(player2.getName() + " played " + move2);
 
-//        if (move1 == move2) {
-//            System.out.println("It's a draw!");
-//        } else if (move1.beats(move2)) {
-//            System.out.println(player1.getName() + " wins!");
-//        } else {
-//            System.out.println("Sorry, but the " + player2.getName() + " chose scissors");
-//        }
-        if (move1 == Move.PAPER){
-            System.out.println("Sorry, but the " + player2.getName() + " chose scissors");
-        }else if(move1 == Move.SCISSORS){
-            System.out.println("Sorry, but the " + player2.getName() + " chose rock");
-        }else if(move1 == Move.ROCK){
-            System.out.println("Sorry, but the " + player2.getName() + " chose paper");
+        if (move1 == move2) {
+            System.out.println("There is a draw (" + move1 + ")");
+        } else if (move1.beats(move2)) {
+            System.out.println("Well done. The computer chose " + move2 + " and failed");
+        } else {
+            System.out.println("Sorry, but the " + player2.getName() + " chose " + move2);
         }
     }
 }
