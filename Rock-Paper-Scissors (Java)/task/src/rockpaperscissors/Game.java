@@ -1,5 +1,9 @@
 package rockpaperscissors;
 
+
+import java.util.Objects;
+
+
 // Game.java
 public class Game {
     private Player player1;
@@ -10,24 +14,35 @@ public class Game {
         this.player2 = p2;
     }
 
-    public boolean playRound() {
-            Move move1 = player1.makeMove();
-            if (move1 == null){
-                return false;
-            }
-            Move move2 = player2.makeMove();
+    public boolean playRound(String userInput) {
+        String str = "rock paper scissors";
+        if (Objects.equals(userInput, "!exit")) {
+            System.out.println("Bye!");
+            return false;
+        } else if (Objects.equals(userInput, "")) {
+            System.out.println("Invalid input.");
+            return true;
 
-            //System.out.println(player1.getName() + " played " + move1);
-            //System.out.println(player2.getName() + " played " + move2);
+        }else if (!str.contains(userInput.toLowerCase())){
+            System.out.println("Invalid input.");
+            return true;
+        }else {
+
+            Move move1 = player1.makeMove(userInput);
+            Move move2 = player2.makeMove("");
 
             if (move1 == move2) {
-                System.out.println("There is a draw (" + move1 + ")");
+                System.out.println("There is a draw (" + move1.toString().toLowerCase() + ")");
+                player1.score(50);
             } else if (move1.beats(move2)) {
-                System.out.println("Well done. The computer chose " + move2 + " and failed");
+                player1.score(100);
+                System.out.println("Well done. The computer chose " + move2.toString().toLowerCase() + " and failed");
             } else {
-                System.out.println("Sorry, but the " + player2.getName() + " chose " + move2);
+                player2.score(100);
+                System.out.println("Sorry, but the " + player2.getName() + " chose " + move2.toString().toLowerCase());
             }
             return true;
+        }
     }
 }
 

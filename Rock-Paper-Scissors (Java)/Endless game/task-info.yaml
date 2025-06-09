@@ -21,9 +21,9 @@ files:
   - name: src/rockpaperscissors/HumanPlayer.java
     visible: true
     learner_created: true
-feedback_link: https://hyperskill.org/projects/314/stages/1766/implement#comment
+feedback_link: https://hyperskill.org/learn/step/24617#comment
 status: Solved
 feedback:
   message: Congratulations!
   time: "Sat, 07 Jun 2025 22:40:25 UTC"
-record: -1
+record: 3
