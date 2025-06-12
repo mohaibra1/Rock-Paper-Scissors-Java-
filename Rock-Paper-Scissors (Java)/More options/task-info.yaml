@@ -6,6 +6,25 @@ files:
   - name: test/Tests.java
     visible: false
     learner_created: false
+  - name: src/rockpaperscissors/Game.java
+    visible: true
+    learner_created: true
+  - name: src/rockpaperscissors/Move.java
+    visible: true
+    learner_created: true
+  - name: src/rockpaperscissors/Player.java
+    visible: true
+    learner_created: true
+  - name: src/rockpaperscissors/ComputerPlayer.java
+    visible: true
+    learner_created: true
+  - name: src/rockpaperscissors/HumanPlayer.java
+    visible: true
+    learner_created: true
 feedback_link: https://hyperskill.org/learn/step/24619#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">Hyperskill</a>
+    to continue learning.
+  time: "Thu, 12 Jun 2025 06:42:31 UTC"
 record: -1

@@ -24,9 +24,6 @@ files:
   - name: src/rockpaperscissors/rating.txt
     visible: true
     learner_created: true
-  - name: rating.txt
-    visible: true
-    learner_created: true
 feedback_link: https://hyperskill.org/learn/step/24618#comment
 status: Solved
 feedback:
